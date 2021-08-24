@@ -10,8 +10,8 @@ import com.medici.university.entity.Reservation;
 import com.medici.university.entity.Student;
 import com.medici.university.repository.AccountRepository;
 import com.medici.university.repository.ProfessorRepository;
-import com.medici.university.service.impl.ProfessorServiceImpl;
-import com.medici.university.service.impl.PublicServiceImpl;
+import com.medici.university.service.ProfessorService;
+import com.medici.university.service.PublicService;
 import com.medici.university.utils.object.RestResponsePage;
 import com.medici.university.utils.object.Role;
 import org.apache.commons.codec.digest.DigestUtils;
@@ -55,7 +55,7 @@ import static org.springframework.boot.test.context.SpringBootTest.WebEnvironmen
 public class ProfessorApiControllerTest {
 
 	@Autowired
-	private PublicServiceImpl publicService;
+	private PublicService publicService;
 	@Autowired
 	private TestRestTemplate restTemplate;
 	@Autowired
@@ -64,7 +64,7 @@ public class ProfessorApiControllerTest {
 	private ProfessorRepository professorRepository;
 
 	@MockBean
-	private ProfessorServiceImpl professorService;
+	private ProfessorService professorService;
 
 	private final HttpHeaders headers = new HttpHeaders();
 

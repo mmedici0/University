@@ -15,7 +15,7 @@ import com.medici.university.entity.Group;
 import com.medici.university.entity.Professor;
 import com.medici.university.entity.Reservation;
 import com.medici.university.entity.Student;
-import com.medici.university.service.impl.StudentServiceImpl;
+import com.medici.university.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -39,7 +39,7 @@ import org.springframework.web.multipart.MultipartFile;
 @Tag(name = "Student", description = "The Student API")
 public class StudentApiController {
 
-	private final StudentServiceImpl studentService;
+	private final StudentService studentService;
 
 	@GetMapping(path = "/profile", produces = "application/json")
 	@Operation(summary = "Get student data")

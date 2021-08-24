@@ -1,6 +1,6 @@
 package com.medici.university.service;
 
-import com.medici.university.service.impl.StudentServiceImpl;
+import com.medici.university.service.StudentService;
 import lombok.extern.slf4j.Slf4j;
 import com.medici.university.entity.Account;
 import com.medici.university.entity.Discussion;
@@ -59,7 +59,7 @@ import static org.springframework.boot.test.context.SpringBootTest.WebEnvironmen
 public class StudentServiceTest {
 
 	@Autowired
-	private StudentServiceImpl studentService;
+	private StudentService studentService;
 	@Autowired
 	private FileRepository fileRepository;
 	@Autowired

@@ -15,7 +15,7 @@ import com.medici.university.entity.Group;
 import com.medici.university.entity.Professor;
 import com.medici.university.entity.Reservation;
 import com.medici.university.entity.Student;
-import com.medici.university.service.impl.ProfessorServiceImpl;
+import com.medici.university.service.ProfessorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -41,7 +41,7 @@ import java.time.LocalDateTime;
 @Tag(name = "Professor", description = "The Professor API")
 public class ProfessorApiController {
 
-	private final ProfessorServiceImpl professorService;
+	private final ProfessorService professorService;
 
 	@GetMapping(path = "/profile", produces = "application/json")
 	@Operation(summary = "Get professor data")

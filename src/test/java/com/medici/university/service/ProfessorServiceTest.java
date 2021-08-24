@@ -1,6 +1,6 @@
 package com.medici.university.service;
 
-import com.medici.university.service.impl.ProfessorServiceImpl;
+import com.medici.university.service.ProfessorService;
 import lombok.extern.slf4j.Slf4j;
 import com.medici.university.entity.Account;
 import com.medici.university.entity.Discussion;
@@ -57,7 +57,7 @@ public class ProfessorServiceTest {
 	@Autowired
 	private GroupRepository groupRepository;
 	@Autowired
-	private ProfessorServiceImpl professorService;
+	private ProfessorService professorService;
 	@Autowired
 	private AccountRepository accountRepository;
 	@Autowired

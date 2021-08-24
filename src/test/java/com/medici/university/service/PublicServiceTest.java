@@ -1,6 +1,6 @@
 package com.medici.university.service;
 
-import com.medici.university.service.impl.PublicServiceImpl;
+import com.medici.university.service.PublicService;
 import lombok.extern.slf4j.Slf4j;
 import com.medici.university.configuration.mail.CustomMailSender;
 import com.medici.university.entity.Account;
@@ -47,7 +47,7 @@ import static org.springframework.boot.test.context.SpringBootTest.WebEnvironmen
 @ComponentScan({"com.medici.university.service", "com.medici.university.configuration.mail"})
 public class PublicServiceTest {
 	@Autowired
-	public PublicServiceImpl publicService;
+	public PublicService publicService;
 	@Autowired
 	private AccountRepository accountRepository;
 	@Autowired

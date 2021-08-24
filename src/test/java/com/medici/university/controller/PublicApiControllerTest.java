@@ -1,7 +1,7 @@
 package com.medici.university.controller;
 
 import lombok.extern.slf4j.Slf4j;
-import com.medici.university.service.impl.PublicServiceImpl;
+import com.medici.university.service.PublicService;
 import com.medici.university.utils.object.RegisterGeneric;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -27,7 +27,7 @@ public class PublicApiControllerTest {
 
 	@Autowired private TestRestTemplate restTemplate;
 
-	@MockBean private PublicServiceImpl publicService;
+	@MockBean private PublicService publicService;
 
 	private final String studentMail = "student@mail.com";
 	private final String professorMail = "professor@mail.com";
