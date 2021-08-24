@@ -57,7 +57,7 @@ public class ProfessorServiceImpl implements ProfessorService {
 				throw new JWTService.TokenVerificationException();
 			}
 
-			Account account = accountRepository.findByRoleAndUsernameAndPassword(Role.Professor, user.getUsername(), user.getPassword())
+			Account account = accountRepository.findByRoleAndUsername(Role.Professor, user.getUsername())
 					.orElseThrow(JWTService.TokenVerificationException::new);
 			return professorRepository.findByAccountId(account.getId())
 					.orElseThrow(JWTService.TokenVerificationException::new);
