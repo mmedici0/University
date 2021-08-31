@@ -180,7 +180,7 @@ public class StudentServiceImpl implements StudentService {
 			throw new IllegalArgumentException("You are already in this group");
 		}
 
-		if (fellowStudentList.size() > 4) {
+		if (fellowStudentList.size() >= 4) {
 			throw new IllegalArgumentException("The group is full");
 		}
 
