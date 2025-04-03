@@ -2,7 +2,7 @@
 
 ### Documentation
 
-The project documentation can be read at the following link: [Documentation](https://app.swaggerhub.com/apis/mmedici/University/1.0.0)
+The API documentation is available at the following Swagger link: [Documentation](https://app.swaggerhub.com/apis/mmedici/University/1.0.0)
 
 ### Requirements
 
